@@ -21,19 +21,26 @@
                 <p>Nic Roland</p>
                 <p>Twitter: <a href=https://twitter.com/nicr9_">@nicr9_</a></p>
                 <p>Github: <a href=https://github.com/nicr9">github.com/nicr9</a></p>
+                <aside class="notes">
+                    I'm on a lot of other things too but I didn't want to clutter the slide
+                    This isn't a talk about me, it's a talk about contributing to the OS community
+                </aside>
             </section>
 
             <section>
-                <h2>Community</h2>
+                <h3>Open Source vs. Community</h3>
+                <aside class="notes">
+                    Quick distinction: OS is about the code, community is about the people (and the code)!
+                </aside>
             </section>
 
             <section>
                 <h2>Why?</h2>
                 <ul>
-                    <li class="fragment">Building confidence</li>
-                    <li class="fragment">Developer experience</li>
-                    <li class="fragment">Professional opportunities</li>
-                    <li class="fragment">Community</li>
+                    <li>Building confidence</li>
+                    <li>Developer experience</li>
+                    <li>Professional opportunities</li>
+                    <li class="fragment">Community provides all this and more</li>
                 </ul>
             </section>
 
@@ -52,27 +59,52 @@
                         <li>Conference talks</li>
                     </span>
                 </ul>
+                <aside class="notes">
+                    Just because you groom an issue, doesn't mean you can't contribute a fix later.
+                    I would argue this is all part of "the contribution life cycle"
+                </aside>
             </section>
 
             <section>
                 <section>
-                        <h2>Finding a Project</h2>
+                        <h2>Tips for Finding a Project</h2>
                         <ol>
-                            <li class="fragment">Don't tackle big projects on your first try</li>
+                            <li class="fragment">Find a project you already use</li>
+                            <li class="fragment">Don't tackle BIG projects on your first try</li>
                             <li class="fragment">Find supporting projects like plugins to start off</li>
-                            <!-- TODO: Find more tips to put in here -->
                         </ol>
+                        <aside class="notes">
+                            It makes it a lot easier if you're familiar with the workings of a project as a user, it'll give you an intuition
+                            High profile projects with lots of developers and activity will give you a hard time establishing a reputation
+                            With time and experience you'll become comfortable with tackling larger projects
+                        </aside>
                 </section>
                 <section>
-                    <h2>Finding Projects</h2>
+                    <h2>Looking for ideas?</h2>
+                    <ul>
+                        <li><a href="http://www.julython.org/projects/">julython.com/projects</a></li>
+                        <li><a href="https://openhatch.org/">openhatch.org</a></li>
+                        <li><a href="http://pypi.python.org/">pypi.python.org</a></li>
+                        <li><a href="https://www.bountysource.com/">bountysource.com</a></li>
+                    </ul>
+                    <aside class="notes">
+                        If you can't think of a project you already use, think about the general topic that interests you.
+                        Here's some sites you can search for related projects.
+                        When you find an interesting project, try it out first!
+                    </aside>
+                </section>
+                <section>
+                    <h2>Navigating Github</h2>
                     <ul>
                         <li><a href="https://github.com/explore">github.com/explore</a></li>
                         <li><a href="https://github.com/showcases">github.com/showcases</a></li>
                         <li><a href="https://github.com/trending">github.com/trending</a></li>
                         <li><a href="https://github.com/stars?direction=desc&sort=created">github.com/stars</a></li>
-                        <li><a href="http://www.julython.org/projects/">julython.com/projects</a></li>
-                        <!-- TODO: Organise these into separate slides-->
                     </ul>
+                    <aside class="notes">
+                        There's so many ways to find something interesting
+                        So many projects it can be overwhelming...
+                    </aside>
                 </section>
             </section>
 
@@ -95,23 +127,57 @@
                 <section>
                     <img src="http://ecx.images-amazon.com/images/I/51oXyW8WQwL._SX387_BO1,204,203,200_.jpg"/>
                 </section>
+                <section>
+                    <h2>Code Reading Tips</h2>
+                    <ul>
+                        <li class="fragment">Take "stream of conciousness" notes</li>
+                        <li class="fragment">Learn to use grep/IDE's advanced search features</li>
+                        <li class="fragment">Read test cases, they offer a lot of context</li>
+                    </ul>
+                </section>
             </section>
 
             <section>
-                <h2>Preparing Your Change</h2>
-                <ul>
-                    <li>CONTRIBUTING.txt</li>
-                    <li>Tests</li>
-                    <li>Backporting</li>
-                    <li>Context in PR description</li>
-                </ul>
+                <section>
+                    <h2>Preparing Your Change</h2>
+                    <p>A lot of projects will provide guidance on how they like changes to be submitted</p>
+                    <ul class="fragment">
+                        <li>CONTRIBUTING(.txt)</li>
+                        <li>README(.txt)</li>
+                        <li>Project wiki/docs</li>
+                    </ul>
+                    <aside class="notes">
+                        Finding/reading/implementing these suggestions before submitting is REALLY important, don't waste the maintainers time
+                    </aside>
+                </section>
+                <section>
+                    <h2>Specific Prep Steps</h2>
+                    <ul>
+                        <li>Tests</li>
+                        <li>Documentation</li>
+                        <li>Linting</li>
+                        <li>Context in PR description</li>
+                        <li>Backporting</li>
+                        <li>Contributor license agreement</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="http://i.imgur.com/b4wrVer.png"/>
+                </section>
             </section>
 
             <section>
                 <h2>Getting Your Change Accepted</h2>
+                <p>Make it as little work as possible for the maintainer to accept it</p>
                 <p>Polite persistence is the key</p>
                 <p>Getting constructive feedback</p>
-                <p>Adhering to coding style</p>
+                <p>Expect scrutiny</p>
+                <aside class="notes">
+                    Make it clear what your change is about,
+                    Make sure your code is clean and easy to validate,
+                    After that they shouldn't have a problem merging it
+                    Remember that you're trying to build a rapport here
+                </aside>
             </section>
 
             <section>
@@ -125,27 +191,55 @@
             </section>
 
             <section>
-                <h2>What Next?</h2>
-                <p>Make a habit of contributing</p>
-                <p>What can you learn from a project?</p>
-                <p>What can you bring to a project?</p>
+                <section>
+                    <h2>What Next?</h2>
+                    <p>Make a habit of contributing</p>
+                    <p>What can you learn from a project?</p>
+                    <p>What can you bring to a project?</p>
+                </section>
+                <section>
+                    <blockquote cite="http://programmers.stackexchange.com/questions/294/how-can-i-find-a-good-open-source-project-to-join">
+                        "It is really hard to describe the satisfaction of using something, finding a bug, grabbing the source and fixing it" -- Tim Post
+                    </blockquote>
+                </section>
             </section>
 
             <section>
-                <h2>Tackling larger projects</h2>
-                <p>Big projects try to support new contributors with guides</p>
-                <p>Subscribe to some issues and follow the conversation</p>
-                <p>Read the wiki (don't be afraid to contribute there as well)</p>
+                <section>
+                    <h2>Tackling larger projects</h2>
+                    <p>First off, this make take some time</p>
+                    <p>It's as much about reputation than good code</p>
+                    <p>Big projects try to support new contributors with guides</p>
+                </section>
+                <section>
+                    <ul>
+                        <li><a href="https://wiki.gnome.org/GnomeLove">wiki.gnome.org/GnomeLove</a></li>
+                        <li><a href="https://www.gnome.org/opw/">gnome.org/opw</a></li>
+                        <li><a href="http://railsgirlssummerofcode.org/">railsgirlssummerofcode.org</a></li>
+                        <li><a href="http://kernelnewbies.org/">kernelnewbies.org</a></li>
+                        <li><a href="http://www.whatcanidoformozilla.org/">whatcanidoformozilla.org</a></li>
+                    </ul>
+                </section>
             </section>
 
             <section>
                 <h2>Become a part of the community</h2>
-                <p>Slack</p>
-                <p>IRC</p>
+                <p>Meetup.com and Eventbrite</p>
                 <p>Conferences</p>
                 <p>Hackathons</p>
                 <p>Sprints</p>
+                <p>Project mailing lists</p>
+                <p>Forums</p>
+                <p>Bug trackers</p>
+                <p>Slack</p>
+                <p>IRC</p>
                 <p>etc</p>
+                <aside class="notes">
+                    So many ways to get involved it boggles the mind...
+                    Meet people in person if possible
+                    Subscribe to some issues and follow the conversation
+                    Read the wiki (don't be afraid to contribute there as well)
+                </aside>
             </section>
 
             <section>
