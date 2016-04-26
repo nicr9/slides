@@ -130,6 +130,7 @@
                 <section>
                     <h2>Code Reading Tips</h2>
                     <ul>
+                        <li class="fragment">Search for the error messages in the code</li>
                         <li class="fragment">Learn to use grep/IDE's advanced search features</li>
                         <li class="fragment">Take "stream of conciousness" notes</li>
                         <li class="fragment">Read test cases, they offer a lot of context</li>
@@ -271,6 +272,10 @@
     <script>
         // Required, even if empty.
         Reveal.initialize({
+            controls: true,
+            dependencies: [
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
         });
     </script>
 </body>
