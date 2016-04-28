@@ -10,7 +10,7 @@ RUN git clone https://github.com/hakimel/reveal.js.git
 WORKDIR /opt/reveal.js
 RUN npm install
 
-ONBUILD ADD slides.html index.html
+ADD slides.html index.html
 
 EXPOSE 8000
 CMD ["grunt", "serve"]

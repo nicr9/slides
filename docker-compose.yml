@@ -1,0 +1,8 @@
+version: '2'
+services:
+  contributing_to_open_source:
+    build:
+      context: ./contributing_to_open_source
+      dockerfile: ./Dockerfile
+    ports:
+      - "8000:8000"
