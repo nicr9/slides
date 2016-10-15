@@ -6,18 +6,18 @@ container_name=slides_test
 build:
 	docker build -t ${docker_img}:${docker_tag} .
 
-test:
+test: build down
 	docker run \
 		--name ${container_name} \
 		-p 80:8000 \
 		-d \
 		${docker_img}:${docker_tag}
 
-push:
+push: build
 	docker push ${docker_img}:${docker_tag}
 
 down:
-	docker rm -f ${container_name}
+	docker rm -f ${container_name} || true
 
 bash:
 	docker exec -it ${container_name} bash
@@ -25,3 +25,6 @@ bash:
 deploy:
 	kubectl apply -f manifests/slides-service.yaml
 	kubectl apply -f manifests/slides-deployment.yaml
+
+open:
+	google-chrome --incognito `minikube service slides --url`

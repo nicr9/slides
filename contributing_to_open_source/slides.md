@@ -291,7 +291,7 @@ Note:
 * Conferences
 * Sprints and hackathons
 
-Note
+Note:
 * Meet people in person if possible
 
 
