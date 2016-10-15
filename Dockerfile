@@ -11,6 +11,7 @@ WORKDIR /opt/reveal.js
 RUN npm install
 
 ADD slides.html index.html
+ADD slides.md slides.md
 
 EXPOSE 8000
 CMD ["grunt", "serve"]
