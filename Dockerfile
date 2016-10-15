@@ -10,8 +10,8 @@ RUN git clone https://github.com/hakimel/reveal.js.git
 WORKDIR /opt/reveal.js
 RUN npm install
 
-ADD slides.html index.html
-ADD slides.md slides.md
+ADD index.html index.html
+ADD contributing_to_open_source/slides.md contributing_to_open_source/slides.md
 
 EXPOSE 8000
 CMD ["grunt", "serve"]

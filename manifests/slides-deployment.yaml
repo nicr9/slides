@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: slides
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: slides
+    spec:
+      containers:
+      - name: slides
+        image: "nicr9/slides:latest"
+        ports:
+        - containerPort: 8000
