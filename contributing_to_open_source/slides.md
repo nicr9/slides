@@ -1,6 +1,6 @@
 ## Contributing to Open Source
 
-Ask not what your community can do for but what you can do for your community!
+Ask not what your community can do for you, but what you can do for your community!
 
 
 
@@ -98,6 +98,7 @@ Note:
 ## Looking for ideas?
 
 * [julython.com/projects](http://www.julython.org/projects/)
+* [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com/)
 * [openhatch.org](https://openhatch.org/)
 * [pypi.python.org](http://pypi.python.org/)
 * [python3wos.appspot.com](https://python3wos.appspot.com/)
@@ -180,14 +181,34 @@ Note:
 * Tests
 * Documentation
 * Linting
+* Semantic commit messages
 * Squash commits
 * Backporting
-* Contributor license agreement
+* Contributor license agreements
 * Context in PR description
 
+Note:
+* You might be asked to do some of these things
+
+
+### Semantic Commit Messages
+
+<img src="http://i.imgur.com/wSrS9Vo.png"/>
+<a href="http://karma-runner.github.io/0.13/dev/git-commit-msg.html">karma-runner.github.io/0.13/dev/git-commit-msg.html</a>
+
+Note:
+* feat, fix, docs, style, refactor, tests, chore
+* Automatic generating of the changelog
+* Simple navigation through git history
+
+
+### PR Description
 
 <img src="http://i.imgur.com/b4wrVer.png"/>
 
+Note:
+* Who, what, why, where, when, how
+* Why would you go to all of the trouble?
 
 
 ## Getting Your Change Accepted
@@ -200,11 +221,10 @@ Note:
 </ol>
 
 Note:
-    Make it clear what your change is about,
-    Make sure your code is clean and easy to validate,
-    After that they shouldn't have a problem merging it
-    Remember that you're trying to build a rapport here
-
+* Make it clear what your change is about
+* Make sure your code is clean and easy to validate
+* After that they shouldn't have a problem merging it
+* Remember that you're trying to build a rapport here
 
 
 ## Dealing With Rejection
@@ -223,17 +243,8 @@ Note:
 <img src="http://www.findmysoft.com/img/news/No-Love-Lost-Between-Linus-Torvalds-and-NVIDIA.jpg"/>
 
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en">
-    <p lang="en" dir="ltr">
-        <a href="https://twitter.com/steveklabnik">@steveklabnik</a>
-        <a href="https://twitter.com/ag_dubs">@ag_dubs</a>
-        “thanks” vs. “actually”<br><br>hmmmmmmmm. 🤔
-        <a href="https://t.co/GEa0O1Z7qy">pic.twitter.com/GEa0O1Z7qy</a>
-    </p>
-    Samuel Fine (@samuelfine)
-    <a href="https://twitter.com/samuelfine/status/765968743872749568">August 17, 2016</a>
-</blockquote>
+<img src="http://i.imgur.com/Jc7tnpB.png"/>
+<a href="https://twitter.com/samuelfine/status/765968743872749568">src:twitter.com/samuelfine/status/765968743872749568</a>
 
 
 <img src="http://i.imgur.com/LvTCTJY.png"/>
@@ -248,18 +259,20 @@ What can you learn from a project?
 What can you bring to a project?
 
 
+## Engaging the Community
 
-## Tackling larger projects
-<ul>
-    <li>Project mailing lists and forums</li>
-    <li>Bug trackers</li>
-    <li>Slack / IRC / Gitter</li>
-</ul>
+* Project mailing lists and forums
+* Bug trackers
+* Slack / IRC / Gitter
+* Meetup.com and Eventbrite
+* Conferences
+* Sprints and hackathons
 
 Note:
 * First off, this make take some time
 * It's as much about reputation than good code
 * Subscribe to some issues and follow the conversation
+* Meet people in person if possible
 
 
 ## Contributors Guides
@@ -285,25 +298,30 @@ Note:
 
 
 
-## Become a part of the community
-
-* Meetup.com and Eventbrite
-* Conferences
-* Sprints and hackathons
-
-Note:
-* Meet people in person if possible
-
-
-## Don't forget to work on your own projects too!
+## Next Steps
 
 * [producingoss.com](http://producingoss.com/)
+* [open-advice.org](http://open-advice.org/)
+
+Note:
+* Don't forget to work on your own projects too!
+* ProducingOSS is about how to run a successful OSS project
+* "What would you have liked to know when you started contributing?"; 42 contributors
+
+
+## Licencing
+
+* [opensource.org/licenses](https://opensource.org/licenses)
 * [tldrlegal.com](https://tldrlegal.com/)
+* [bswd.com/CNSV-1304-Saper(IP-SIG).pdf](http://www.bswd.com/CNSV-1304-Saper(IP-SIG).pdf)
+
+Note:
+* Take the time to choose an open source licence
 
 
 
-<h2>Contributions Welcome</h2>
+## Contributions Welcome
 
-<a href="https://github.com/nicr9/presentations">github.com/nicr9/presentations</a>
+[github.com/nicr9/presentations](https://github.com/nicr9/presentations)
 
-<a href="https://twitter.com/nicr9_">@nicr9_</a>
+[@nicr9\_](https://twitter.com/nicr9_)
