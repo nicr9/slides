@@ -44,16 +44,16 @@ Note:
 * Prospective interns Github profiles; GH is my CV;
 
 
-<blockquote cite="http://programmers.stackexchange.com/questions/294/how-can-i-find-a-good-open-source-project-to-join">
-    "It is really hard to describe the satisfaction of using something, finding a bug, grabbing the source and fixing it" -- Tim Post (src:StackExchange)
+<blockquote cite="https://blog.jessfraz.com/post/blurred-lines/">
+    "If you have contributed to an open source project before, you know that feeling when your first pull request to a project is merged. It is magical. In that moment you have become a part of something so much bigger than yourself." -- Jessie Frazelle
 </blockquote>
+
 
 
 <img src="https://i.imgflip.com/18y7e9.jpg"/>
 
 Note:
 * Hopefully you're all psyched up now!
-
 
 
 ## Types of Contributions
@@ -78,6 +78,7 @@ Note:
 * Merge two bug reports; reliable steps to reproduce; write some tests; bug fix; clean up docs
 
 
+
 ## Tips for Finding a Project
 
 <ol>
@@ -95,7 +96,7 @@ Note:
 * With time and experience you'll become comfortable with tackling larger projects
 
 
-## Looking for ideas?
+## Still Looking for Ideas?
 
 * [julython.com/projects](http://www.julython.org/projects/)
 * [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com/)
@@ -106,11 +107,15 @@ Note:
 * [contribhub.org](http://contribhub.org/)
 * [codetriage.com](https://www.codetriage.com/)
 * [github.com/donnemartin/viz](https://github.com/donnemartin/viz)
+* [yourfirstpr.github.io](https://yourfirstpr.github.io/)
+
 
 Note:
 * If you can't think of a project you already use, think about the general topic that interests you.
 * Here's some sites you can search for related projects.
 * When you find an interesting project, try it out first!
+* viz is interactive github repo stat visualizations
+* yourfirstpr showcases low hanging fruit issues on github
 
 
 ## Github growing the community
@@ -118,14 +123,10 @@ Note:
 * [guides.github.com/activities/contributing-to-open-source/](https://guides.github.com/activities/contributing-to-open-source/)
 * [github.com/blog/2195-the-shape-of-open-source](https://github.com/blog/2195-the-shape-of-open-source)
 
-* [yourfirstpr.github.io](https://yourfirstpr.github.io/)
-
 Note:
 * They're really invested becaues their business model depends on OSS
 * Offer a guide (not as good as this talk)
 * Really interesting blog post talking about effect scaling contributors has on OS projects
-* yourfirstpr showcases low hanging fruit issues on github
-* viz is interactive github repo stat visualizations
 
 
 
@@ -322,6 +323,6 @@ Note:
 
 ## Contributions Welcome
 
-[github.com/nicr9/presentations](https://github.com/nicr9/presentations)
+[github.com/nicr9/slides](https://github.com/nicr9/slides)
 
 [@nicr9\_](https://twitter.com/nicr9_)

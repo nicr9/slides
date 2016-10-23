@@ -11,7 +11,7 @@ WORKDIR /opt/reveal.js
 RUN npm install
 
 ADD index.html index.html
-ADD contributing_to_open_source contributing_to_open_source
+ADD open_source open_source
 
 EXPOSE 8000
 CMD ["grunt", "serve"]

@@ -9,7 +9,7 @@ build:
 test: build down
 	docker run \
 		--name ${container_name} \
-		-p 80:8000 \
+		-p 8000:8000 \
 		-d \
 		${docker_img}:${docker_tag}
 
@@ -25,6 +25,10 @@ bash:
 deploy:
 	kubectl apply -f manifests/slides-service.yaml
 	kubectl apply -f manifests/slides-deployment.yaml
+
+teardown:
+	kubectl delete -f manifests/slides-service.yaml
+	kubectl delete -f manifests/slides-deployment.yaml
 
 open:
 	google-chrome --incognito `minikube service slides --url`
