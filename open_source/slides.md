@@ -101,32 +101,43 @@ Note:
 * [julython.com/projects](http://www.julython.org/projects/)
 * [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com/)
 * [openhatch.org](https://openhatch.org/)
+* [github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 * [pypi.python.org](http://pypi.python.org/)
 * [python3wos.appspot.com](https://python3wos.appspot.com/)
-* [bountysource.com](https://www.bountysource.com/)
 * [contribhub.org](http://contribhub.org/)
 * [codetriage.com](https://www.codetriage.com/)
-* [github.com/donnemartin/viz](https://github.com/donnemartin/viz)
+* [bountysource.com](https://www.bountysource.com/)
 * [yourfirstpr.github.io](https://yourfirstpr.github.io/)
-
+* [github.com/donnemartin/viz](https://github.com/donnemartin/viz)
 
 Note:
 * If you can't think of a project you already use, think about the general topic that interests you.
 * Here's some sites you can search for related projects.
 * When you find an interesting project, try it out first!
-* viz is interactive github repo stat visualizations
 * yourfirstpr showcases low hanging fruit issues on github
+* viz provides interactive visualizations of github repo stat
 
 
-## Github growing the community
+## Github & Community
 
 * [guides.github.com/activities/contributing-to-open-source/](https://guides.github.com/activities/contributing-to-open-source/)
+* [help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/)
+* [github.com/explore](https://github.com/explore)
+* [github.com/github](https://github.com/github)
+* [help.github.com/categories/building-a-strong-community/](https://help.github.com/categories/building-a-strong-community/)
 * [github.com/blog/2195-the-shape-of-open-source](https://github.com/blog/2195-the-shape-of-open-source)
 
 Note:
 * They're really invested becaues their business model depends on OSS
 * Offer a guide (not as good as this talk)
 * Really interesting blog post talking about effect scaling contributors has on OS projects
+
+
+<img src="https://cloud.githubusercontent.com/assets/4483/11511691/2b11c3fa-9830-11e5-8721-91d1ef644940.png"/>
+
+Note:
+* The post also discusses/graphs the effect of open sourcing a project
+* Bottom line: Open Source is a community effort
 
 
 
@@ -159,6 +170,8 @@ Note:
 </ul>
 
 Note:
+* I advise learning grep anyway because you can pipe it
+* "Read the source" isn't always enough, sometime you need the data too
 * If your project doesn't have test cases, contribute some
 
 
@@ -212,6 +225,7 @@ Note:
 * Why would you go to all of the trouble?
 
 
+
 ## Getting Your Change Accepted
 
 <ol>
@@ -230,12 +244,10 @@ Note:
 
 ## Dealing With Rejection
 
-<ul>
-    <li>Maintainer too busy?</li>
-    <li>Is your feature considered out of scope?</li>
-    <li>Did you misunderstand the project's target use case?</li>
-    <li>Toxic community?</li>
-</ul>
+* Maintainer too busy?
+* Is your feature considered out of scope?
+* Did you misunderstand the project's target use case?
+* Toxic community?
 
 Note:
 * Linux is a great example but there's plenty of others
@@ -255,9 +267,16 @@ Note:
 
 ## What Next?
 
-Make a habit of contributing
-What can you learn from a project?
-What can you bring to a project?
+<ul>
+    <li>Make a habit of contributing</li>
+    <li>What can you learn from a project?</li>
+    <li>What can you bring to a project?</li>
+    <li class="fragment">Tackle a larger project</li>
+</ul>
+
+Note:
+* Don't be in a rush to move on
+* Eventually, you'll find you're ready to...
 
 
 ## Engaging the Community
@@ -270,7 +289,6 @@ What can you bring to a project?
 * Sprints and hackathons
 
 Note:
-* First off, this make take some time
 * It's as much about reputation than good code
 * Subscribe to some issues and follow the conversation
 * Meet people in person if possible
@@ -288,7 +306,7 @@ Note:
 
 Note:
 * OS projects are generally only hindered by the number of people contributing
-* Big projects try to attract/support new contributors with guides
+* Big projects try to attract new contributors with guides
 
 
 ## Support Programs
@@ -297,15 +315,18 @@ Note:
 * [railsgirlssummerofcode.org](http://railsgirlssummerofcode.org/)
 * [developers.google.com/open-source/gsoc/](https://developers.google.com/open-source/gsoc/)
 
+Note:
+* Encouraging diversity is also a priority for many OS projects
 
 
-## Next Steps
+
+## Taking on a bigger role
 
 * [producingoss.com](http://producingoss.com/)
 * [open-advice.org](http://open-advice.org/)
 
 Note:
-* Don't forget to work on your own projects too!
+* I wish I had more advice here...
 * ProducingOSS is about how to run a successful OSS project
 * "What would you have liked to know when you started contributing?"; 42 contributors
 
@@ -314,9 +335,10 @@ Note:
 
 * [opensource.org/licenses](https://opensource.org/licenses)
 * [tldrlegal.com](https://tldrlegal.com/)
-* [bswd.com/CNSV-1304-Saper(IP-SIG).pdf](http://www.bswd.com/CNSV-1304-Saper(IP-SIG).pdf)
+* [bswd.com/CNSV-1304-Saper(IP-SIG).pdf](https://goo.gl/1TI6tN)
 
 Note:
+* Don't forget to work on your own projects too!
 * Take the time to choose an open source licence
 
 
