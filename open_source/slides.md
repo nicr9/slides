@@ -21,12 +21,12 @@ Note:
 ### Open Source vs. Community
 
 Note:
-* OS is about the code, community is about the people
+* People talk about code, people talk about community
+* If you only take one thing away from this talk...
 * Your focus/contributions should ultimately be aimed at the community
 * They're the ones that contribute back!
 * Not telling you to not contribute code
-* N.B. You can't have the code w/o the people
-* If the people didn't have the code, they'd just write more code!
+* The code would not exist were it not for the community
 
 
 
@@ -124,7 +124,6 @@ Note:
 * [help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/)
 * [github.com/explore](https://github.com/explore)
 * [github.com/github](https://github.com/github)
-* [help.github.com/categories/building-a-strong-community/](https://help.github.com/categories/building-a-strong-community/)
 * [github.com/blog/2195-the-shape-of-open-source](https://github.com/blog/2195-the-shape-of-open-source)
 
 Note:
@@ -322,6 +321,7 @@ Note:
 
 ## Taking on a bigger role
 
+* [help.github.com/categories/building-a-strong-community/](https://help.github.com/categories/building-a-strong-community/)
 * [producingoss.com](http://producingoss.com/)
 * [open-advice.org](http://open-advice.org/)
 
