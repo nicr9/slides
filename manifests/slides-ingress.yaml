@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: slides
+spec:
+  rules:
+    - host: slides.nicro.land
+      http:
+        paths:
+        - backend:
+            serviceName: slides
+            servicePort: 80

@@ -10,8 +10,8 @@ spec:
         app: slides
     spec:
       containers:
-      - name: slides
-        image: "nicr9/slides:latest"
-        ports:
-        - containerPort: 8000
-        imagePullPolicy: Always
+        - name: slides
+          image: "nicr9/slides:latest"
+          ports:
+          - containerPort: 8000
+          imagePullPolicy: Always
