@@ -18,7 +18,7 @@ Note:
 
 
 
-### Open Source vs. Community
+### Code vs. Community
 
 Note:
 * People talk about code, people talk about community
@@ -32,22 +32,29 @@ Note:
 
 ## Why?
 
-* Building confidence
 * Developer experience
 * Professional opportunities
-<li class="fragment">Community provides all this and more</li>
+* Building confidence
 
 Note:
 * Just to ilustrate benifits of both OS and community
-* Craftsmenship; Software is more and more relevant; change the code, change the world
 * Reading someone elses code is very instructive; unraveling it feels like a murder mystery
-* Prospective interns Github profiles; GH is my CV;
+* Prospective interns Github profiles; GitHub is my CV;
+* Craftsmenship; Software is more and more relevant; change the code, change the world
+* First time your PR is merged is great
 
 
 <blockquote cite="https://blog.jessfraz.com/post/blurred-lines/">
     "If you have contributed to an open source project before, you know that feeling when your first pull request to a project is merged. It is magical. In that moment you have become a part of something so much bigger than yourself." -- Jessie Frazelle
 </blockquote>
 
+
+### Community provides all this and more!
+
+Note:
+* Talks just like this one; Blog posts; advice from colleagues
+* Survey: referals
+* Story about finding a new job
 
 
 <img src="https://i.imgflip.com/18y7e9.jpg"/>
@@ -98,13 +105,10 @@ Note:
 
 ## Still Looking for Ideas?
 
-* [julython.com/projects](http://www.julython.org/projects/)
-* [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com/)
 * [openhatch.org](https://openhatch.org/)
 * [github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 * [pypi.python.org](http://pypi.python.org/)
 * [python3wos.appspot.com](https://python3wos.appspot.com/)
-* [contribhub.org](http://contribhub.org/)
 * [codetriage.com](https://www.codetriage.com/)
 * [bountysource.com](https://www.bountysource.com/)
 * [yourfirstpr.github.io](https://yourfirstpr.github.io/)
@@ -116,6 +120,16 @@ Note:
 * When you find an interesting project, try it out first!
 * yourfirstpr showcases low hanging fruit issues on github
 * viz provides interactive visualizations of github repo stat
+
+
+## Online Hackathons
+
+* [julython.com/projects](http://www.julython.org/projects/)
+* [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com/)
+
+Notes:
+* Also a great place to find projects to contribute to
+* There aren't enough hackathons these days IMHO
 
 
 ## Github & Community
@@ -173,6 +187,19 @@ Note:
 * "Read the source" isn't always enough, sometime you need the data too
 * If your project doesn't have test cases, contribute some
 
+
+
+## First PR suggestions
+
+* Include an open source licence
+* Update a project's dependancies
+* Fix a broken CI build
+
+Note:
+* A lot of projects on GitHub don't already have licences
+* MITs a nice general purpose licence - Just my opinion...
+* Make sure to run the full test suite after updating dependancies
+* Anyone have any other suggestions?
 
 
 ## Preparing Your Change
