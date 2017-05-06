@@ -12,6 +12,7 @@ RUN npm install
 
 ADD index.html index.html
 ADD open_source open_source
+ADD groupie groupie
 
 EXPOSE 8000
 CMD ["grunt", "serve"]
