@@ -125,9 +125,9 @@ You dont have any projects. You can try to create a new project, by running
 ```
 
 Note:
-* `oc login -u nic`
 * IdentityProviders are plugable authentication backends
 * You can create new users just by signing into them
+* `oc login -u nic`
 * Note the password prompt; it will accept anything
 * You'll obviously want to consider other `IdentityProvider`s for your production clusters
 
@@ -175,7 +175,7 @@ Note:
 
 A `ClusterPolicy` is a collection of `Role`s
 
-A `Role` contains rules, each of which ties a list of verbs to a list of resources
+A `Role` contains rules tying a list of verbs to a list of resources
 
 Note:
 * These `ClusterPolicies` explain what it means to have a `Role`
@@ -183,7 +183,7 @@ Note:
 * It's what is used by a lot of the logical internals of OpenShift
 
 
-Lets review the `ClusterPolicies/default` to find a suitable `Role` for `developer`
+Lets review the `ClusterPolicies/default` to find a suitable `Role` for `nic`
 
 ```
 $ oc describe clusterPolicies | less -S
@@ -225,14 +225,16 @@ Note:
 
 
 
-Lets create a new project...
+### Roles Demo
+
+Lets create a new project
 
 ```bash
 $ oc adm new-project demo
 Created project demo
 ```
 
-...and give `nic` view access
+and give `nic` view access
 
 ```bash
 $ oc project demo
@@ -248,10 +250,7 @@ Note:
 * `oc adm policy add-role-to-user view nic`
 
 
-
-### Roles Demo
-
-Now lets quickly create a demo application
+In the project we'll create a demo application
 
 ```bash
 $ oc new-app https://github.com/openshift/ruby-hello-world.git
@@ -324,14 +323,33 @@ Note:
 * `oc login -u system:admin`
 * `oc adm policy add-role-to-user edit nic`
 * N.B. This doesn't overwrite the `view` role that `nic` already had
-
-
-Quick jump back to the webconsole to scale the app
+* Quick jump back to the webconsole to scale the app
 
 
 
-## SecurityContextConstraints
+### Security Context Constraints (SCC)
 
-Worst title for a slide ever
+An SCC controls permissions for processes running inside of Pods
 
-TODO: finish this!
+
+Here's a list of restrictions an SCC can enforce:
+
+* Mount volumes on the host
+* Access host network
+* Expose host ports
+* Run container with `--privileged`
+* File capabilities
+* Run as User
+* SELinux Contexts
+
+Note:
+* TODO: Not sure about difference between host network and host ports - Presumably inbound and outbound?
+* TODO: Need examples of why `--privileged` is useful
+* Capabilities refers to file capabilities: see `man 7 capabilities`
+
+
+Common usecases for SCCs include:
+
+* To allow processes to run as root (or some other PID)
+* To expose Services directly on the host (Routers)
+* TODO: Look for some other examples
