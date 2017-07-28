@@ -355,11 +355,10 @@ Note:
 An SCC controls permissions for processes running inside of Pods
 
 Note:
-* Frequently you'll be asked to get legacy software running in OpenShift
-* This might work in Docker but not in OpenShift
+* Need to run legacy software in OpenShift
+* Works in Docker, not in OpenShift
 * Reason: it expected to be run as root
-* OpenShift has a lot of security restrictions enabled by default
-* They're controlled by SCCs
+* Security restrictions managed by SCCs
 
 
 Restrictions enforced by SCCs:
