@@ -2,6 +2,8 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: slides
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: nicro-ip
 spec:
   rules:
     - host: slides.nicro.land
