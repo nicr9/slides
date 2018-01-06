@@ -4,14 +4,6 @@ I thought it would be a cool idea to write my presentations as `reveal.js` power
 
 This would mean that it would be easy for me to accept feedback in the form of a pull request or github issue.
 
-## Dependancies
-
-If you want to test these slide decks locally you'll need `make` and `docker` installed.
-
-You should be able to find instructions for installing make regardless of which operating system you use.
-
-If you're a Windows/OS X person and you need to install docker, check out [docker-toolbox](https://www.docker.com/products/docker-toolbox). It'll sort you out. If you prefer Linux, installation instructions will vary from distro to distro but it's usually pretty [straight forward](https://docs.docker.com/engine/installation/).
-
 ## Serving slide decks
 
 To host the slides locally with docker:
