@@ -25,16 +25,3 @@ down:
 
 bash:
 	docker exec -it ${container_name} bash
-
-deploy:
-	kubectl apply -f manifests/slides-service.yaml
-	kubectl apply -f manifests/slides-ingress.yaml
-	kubectl apply -f manifests/slides-deployment.yaml
-
-teardown:
-	kubectl delete -f manifests/slides-service.yaml
-	kubectl delete -f manifests/slides-ingress.yaml
-	kubectl delete -f manifests/slides-deployment.yaml
-
-open:
-	google-chrome --incognito `minikube service slides --url`
