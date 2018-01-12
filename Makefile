@@ -1,4 +1,5 @@
 REVEALJS_VERSION=3.6.0
+DOMAIN=slides.nicro.land
 .PHONY: gitignore init _update update generate
 
 gitignore:
@@ -26,3 +27,5 @@ generate:
 	cp -r groupie public
 	cp -r openshift-authz public
 	cp index.html public
+	printf '${DOMAIN}' > public/CNAME
+	rm public/.gitignore public/.travis.yml public/CONTRIBUTING.md public/README.md public/demo.html
