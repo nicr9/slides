@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OpenShift Authorisation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/blood.css" id="theme">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .footer {
+          position: absolute;
+          right: 8em;
+          bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown="slides.md"
+                data-separator="^\n\n\n"
+                data-separator-vertical="^\n\n"
+                data-separator-notes="^Note:"
+                data-charset="iso-8859-15">
+            </section>
+
+            </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+
+    <div class="footer">
+       <img height=55 width=400 src="https://www.ammeon.com/wp-content/uploads/2016/05/Ammeon_Logo_web_Horizontal.png"/>
+    </div>
+
+    <script>
+        Reveal.addEventListener('ready', function(event) {
+            // If 'demo' in querystring...
+            var parts = location.search.substring(1).split('&');
+            if (parts.indexOf("demo") >= 0) {
+                // ...hide code.lang-bash
+                $("code.lang-bash").css("display", "none");
+            } else {
+                $("code.lang-bash").css("display", "block");
+            }
+        });
+
+        // Required, even if empty.
+        Reveal.initialize({
+            width: '100%',
+            controls: true,
+            history: true,
+            dependencies: [
+                { src: '../plugin/markdown/marked.js' },
+                { src: '../plugin/markdown/markdown.js' },
+                { src: '../plugin/notes/notes.js', async: true },
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            ]
+        });
+
+    </script>
+</body>
+</html>
