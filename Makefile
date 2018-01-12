@@ -1,27 +1,26 @@
-docker_tag=latest
-docker_img=nicr9/slides
-container_name=slides_test
+REVEALJS_VERSION=3.6.0
+.PHONY: gitignore init update generate
 
+gitignore:
+	grep -q -F '^public$$' .gitignore || echo 'public' >> .gitignore
 
-build:
-	docker build -t ${docker_img}:${docker_tag} .
+init: .gitignore
+	git checkout --orphan gh-pages
+	git reset --hard
+	git commit --allow-empty -m "Initialising gh-pages branch"
+	git push origin gh-pages
+	git checkout master
+	git worktree add -B gh-pages public origin/gh-pages
 
-test: build down
-	docker run \
-		--name ${container_name} \
-		-p 8000:8000 \
-		-v `pwd`/open_source:/opt/reveal.js/open_source \
-		-v `pwd`/groupie:/opt/reveal.js/groupie \
-		-v `pwd`/openshift-authz:/opt/reveal.js/openshift-authz \
-		-d \
-		${docker_img}:${docker_tag}
-	google-chrome --incognito 0.0.0.0:8000
+public:
+	git worktree add -B gh-pages public origin/gh-pages
 
-push: build
-	docker push ${docker_img}:${docker_tag}
+update: public
+	rm -rf ./public/*
+	wget -qO- https://github.com/hakimel/reveal.js/archive/${REVEALJS_VERSION}.tar.gz | tar -xzC ./public -f - --strip-components=1
 
-down:
-	docker rm -f ${container_name} || true
-
-bash:
-	docker exec -it ${container_name} bash
+generate:
+	cp -r open_source public
+	cp -r groupie public
+	cp -r openshift-authz public
+	cp index.html public
