@@ -1,5 +1,5 @@
 REVEALJS_VERSION=3.6.0
-.PHONY: gitignore init update generate
+.PHONY: gitignore init _update update generate
 
 gitignore:
 	grep -q -F '^public$$' .gitignore || echo 'public' >> .gitignore
@@ -15,9 +15,11 @@ init: .gitignore
 public:
 	git worktree add -B gh-pages public origin/gh-pages
 
-update: public
+_update: public
 	rm -rf ./public/*
 	wget -qO- https://github.com/hakimel/reveal.js/archive/${REVEALJS_VERSION}.tar.gz | tar -xzC ./public -f - --strip-components=1
+
+update: _update generate
 
 generate:
 	cp -r open_source public
