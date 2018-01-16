@@ -41,6 +41,9 @@ Note:
 * Let's talk about how to get the most out of version control
 * Some of the more controversial practices aren't mentioned here
     * Commit squashing, code linting hooks, etc.
+* These practices allow developers to assume that they can:
+    * Open arbitrary commits and they should be functional
+    * Revert arbitrary commits and not incur unintended consiquences
 * These ideas sound great in theory
 * How can we make it work in practice?
 
@@ -111,7 +114,47 @@ Note:
 
 ----
 
+## Context switching
 
+`git commit --all` && `git checkout -b bugfix master`
+
+* **PRO**: Easy to remember for git first timers
+* **CON**: Commit represents incomplete changeset; Code commited may not work
+* You may have to `--amend` this commit later to pick up where you left off
+
+Note:
+
+* Has your boss ever asked you to drop everything immediately to fix a bug?
+* There are a few ways to preserve your current changes so that you can work on higher priority work
+
+---
+
+* `git stash save` && `git checkout -b bugfix master`
+
+* Stash save your code without making a commit
+* **PRO**: You can break up your changes with `git add -p` later
+* **PRO**: Stored in a stack so you can stash as many changesets as you like
+* `git stash pop` to reapply changes later
+
+Note:
+
+* Stashes can be saved with a message to remind you what you were working on
+
+---
+
+* `git worktree add -b bugfix ../bugfix master`
+
+* Creates a new worktree in a folder outside and checks out a new branch there
+* **PRO**: Your current changeset is untouched; you can work on both changes in parallel
+* **PRO**: Great for managing multiple release branches as separate directories
+* **CON**: Only available in git 2.6+
+* When you're finished you can delete the new worktree `rm -rf ../bugfix`
+
+Note:
+
+* I've used this for static website generation
+
+----
 
 # Git aliases
 
