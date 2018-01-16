@@ -49,22 +49,92 @@ Note:
 ## Overview
 
 * Breaking up changesets and reviewing commits (w/ `git add -p` and `git checkout -p`)
+* Aborting merges and more
 * Context switching: (w/ `git stash` and `git worktree`)
 * Digging into a repository's history (a closer look at `git log` and the git "pickaxe")
 * Hunt down regressions in past commits (w/ `git bisect`)
 * Rewriting history; here be dragons (`git rebase -i` and `git filter-branch`)
-* Git config options
-* Git aliases
+* Retrieving lost commits (w/ the `git` reflog)
+* Lesser known git config options
+* Git aliases to streamline your workflow
 
 ----
 
-# Patch mode
+## Patch mode
+
+`git add -p` and `git checkout -p`
 
 * All too often people commit a file at a time
 * Patch mode allows you to stage/discard parts of a changed file
+
+Note:
+* `make patch`
+* `git add -p` - Add a hunk, ignore a hunk, edit a hunk
+* `git diff --cached` - Review staged changes
+* `git checkout -p` - Discard a hunk, ignore a hunk, edit a hunk
+* `git diff` - Review unstaged changes
+* `git reset --hard HEAD`
+
+----
+
+## Aborting merges
+
+`git merge --abort`
+
+* I find this particularly helpful after a messy `git pull`
+
+---
+
+```
+$ git pull
+Auto-merging plugin/markdown/example.md
+CONFLICT (add/add): Merge conflict in plugin/markdown/example.md
+Auto-merging plugin/markdown/example.html
+CONFLICT (add/add): Merge conflict in plugin/markdown/example.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git merge --abort
+$ git pull -X theirs
+```
+
+Note:
+
+* `-X` for setting merge strategy options
+
+---
+
+## Other things you can `--abort`
+
+* `git revert --abort`
+* `git rebase --abort`
+* `git cherry-pick --abort`
+
+----
+
+
+
+# Git aliases
+
+`git graph`
+
+```
+$ git config --global alias.graph=log --oneline --graph --decorate
+```
+
+`git amend`
+
+```
+git config --global alias.amend=commit --amend
+```
 
 ----
 
 ## Further reading
 
 * https://www.toptal.com/git/the-advanced-git-guide
+
+---
+
+## Q&A
+
+[slides.nicro.land/advanced-git](http://slides.nicro.land/advanced-git)
