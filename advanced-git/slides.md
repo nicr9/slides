@@ -156,6 +156,44 @@ Note:
 
 ----
 
+## Digging into repository history
+
+`git blame <file>`
+
+* Show the commit sha, author and date of the latest change to a file
+* `-L n,m` - Process only line range n,m
+
+Note:
+
+* Vim has a git plugin called fugitive which has a great `:Gblame` function
+
+---
+
+`git log -- <file>`
+
+* Commits that modify a specific file/directory
+
+Note:
+
+* Not many people realise that you can filter commits by file modified
+* It can tell you a lot about that file's history and the design decisions
+    * If people have been writting decent commit messages
+
+---
+
+`git log -p -S <string>`
+
+* Called "git pickaxe"
+* List commits that contain `<string>` if the diff
+* `--pickaxe-all` to see full changesets
+* `--pickaxe-regex` to interpret `<string>` as a regex
+
+Note:
+
+* Smarter than `git blame` which can only tell you the last commit that changed a line
+
+----
+
 # Git aliases
 
 `git graph`
