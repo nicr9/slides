@@ -5,9 +5,9 @@
 ```
 $ git config -l
 user.name=Nic Roland
-user.email=nicroland9@gmail.com
-user.twitter=[@nicr9\_](https://twitter.com/nicr9_)
-user.github=[github.com/nicr9](https://github.com/nicr9)
+user.email=nic.roland@ammeon.com
+user.twitter=@nicr9_
+user.github=github.com/nicr9
 ```
 
 ----
@@ -34,7 +34,7 @@ Note:
 * Review your own changes
 * Commits should be small, related changesets
 * Commit frequently
-* Use commit messages as a type of documentation
+* Put useful detail into the commit messages
 
 Note:
 
@@ -43,7 +43,7 @@ Note:
     * Commit squashing, code linting hooks, etc.
 * These practices allow developers to assume that they can:
     * Open arbitrary commits and they should be functional
-    * Revert arbitrary commits and not incur unintended consiquences
+    * Revert arbitrary commits and not incur unintended consequences
 * These ideas sound great in theory
 * How can we make it work in practice?
 
@@ -52,13 +52,10 @@ Note:
 ## Overview
 
 * Breaking up changesets and reviewing commits (w/ `git add -p` and `git checkout -p`)
-* Aborting merges and more
+* Aborting commands like merges
 * Context switching: (w/ `git stash` and `git worktree`)
 * Digging into a repository's history (a closer look at `git log` and the git "pickaxe")
 * Hunt down regressions in past commits (w/ `git bisect`)
-* Rewriting history; here be dragons (`git rebase -i` and `git filter-branch`)
-* Retrieving lost commits (w/ the `git` reflog)
-* Lesser known git config options
 * Git aliases to streamline your workflow
 
 ----
@@ -71,12 +68,8 @@ Note:
 * Patch mode allows you to stage/discard parts of a changed file
 
 Note:
-* `make patch`
-* `git add -p` - Add a hunk, ignore a hunk, edit a hunk
-* `git diff --cached` - Review staged changes
-* `git checkout -p` - Discard a hunk, ignore a hunk, edit a hunk
-* `git diff` - Review unstaged changes
-* `git reset --hard HEAD`
+
+* Commiting whole files makes it easy to overlook changes you didn't intend
 
 ----
 
@@ -116,16 +109,26 @@ Note:
 
 ## Context switching
 
-`git commit --all` && `git checkout -b bugfix master`
-
-* **PRO**: Easy to remember for git first timers
-* **CON**: Commit represents incomplete changeset; Code commited may not work
-* You may have to `--amend` this commit later to pick up where you left off
+![](https://i.imgflip.com/22wvj2.jpg)
 
 Note:
 
 * Has your boss ever asked you to drop everything immediately to fix a bug?
 * There are a few ways to preserve your current changes so that you can work on higher priority work
+
+---
+
+`git commit --all` && `git checkout -b bugfix master`
+
+* **PRO**: Easy to remember for git first timers
+* **CON**: Commit represents incomplete changeset
+* **CON**: You may have to `reset` or `commit --amend` later
+
+Note:
+
+* Incomplete changeset
+    * Code commited may not work
+    * The comment will be made in a hurry and won't make sense
 
 ---
 
@@ -157,6 +160,19 @@ Note:
 ----
 
 ## Digging into repository history
+
+* I love the term "code archeology"
+* Sometimes the comments just aren't enough
+* Git is frequently used as a forensics tool
+
+Note:
+
+* A lot of what we do is read other peoples code
+* Who introduced this bug?
+* Why is the code written this way?
+* What the fuck is that line supposed to do?!
+
+---
 
 `git blame <file>`
 
@@ -192,6 +208,14 @@ Note:
 
 * Smarter than `git blame` which can only tell you the last commit that changed a line
 
+---
+
+`git bisect start` && `git bisect bad|good <commit-sha>`
+
+* Find the commit that introduced a regression in O(log N)
+* Use the `bad` and `good` commands to inform git which commits you know contain the regression
+* Git will suggest new commits to try (based on a binary search)
+
 ----
 
 # Git aliases
@@ -199,22 +223,16 @@ Note:
 `git graph`
 
 ```
-$ git config --global alias.graph=log --oneline --graph --decorate
+$ git config --global alias.graph "log --oneline --graph --decorate"
 ```
 
 `git amend`
 
 ```
-git config --global alias.amend=commit --amend
+git config --global alias.amend "commit -a --amend -C HEAD"
 ```
 
 ----
-
-## Further reading
-
-* https://www.toptal.com/git/the-advanced-git-guide
-
----
 
 ## Q&A
 
