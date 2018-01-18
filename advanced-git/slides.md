@@ -132,7 +132,7 @@ Note:
 
 ---
 
-* `git stash save` && `git checkout -b bugfix master`
+`git stash save` && `git checkout -b bugfix master`
 
 * Stash save your code without making a commit
 * **PRO**: You can break up your changes with `git add -p` later
@@ -145,7 +145,7 @@ Note:
 
 ---
 
-* `git worktree add -b bugfix ../bugfix master`
+`git worktree add -b bugfix ../bugfix master`
 
 * Creates a new worktree in a folder outside and checks out a new branch there
 * **PRO**: Your current changeset is untouched; you can work on both changes in parallel
