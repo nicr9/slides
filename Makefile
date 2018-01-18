@@ -26,6 +26,7 @@ generate:
 	cp -r open_source public
 	cp -r groupie public
 	cp -r openshift-authz public
+	cp -r advanced-git public
 	cp index.html public
 	printf '${DOMAIN}' > public/CNAME
 	rm public/.gitignore public/.travis.yml public/CONTRIBUTING.md public/README.md public/demo.html
