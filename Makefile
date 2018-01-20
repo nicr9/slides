@@ -1,6 +1,5 @@
-REVEALJS_VERSION=3.6.0
 DOMAIN=slides.nicro.land
-.PHONY: gitignore init _update update generate
+REVEALJS_VERSION=3.6.0
 
 gitignore:
 	grep -q -F '^public$$' .gitignore || echo 'public' >> .gitignore
@@ -30,3 +29,5 @@ generate:
 	cp index.html public
 	printf '${DOMAIN}' > public/CNAME
 	rm public/.gitignore public/.travis.yml public/CONTRIBUTING.md public/README.md public/demo.html
+
+.PHONY: gitignore init _update update generate
