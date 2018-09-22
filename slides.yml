@@ -1,0 +1,27 @@
+meta:
+  author: Nic Roland
+  description: Slide Decks
+  title: Slide Decks by Nic Roland
+  web: https://twitter.com/nicr9_
+decks:
+  - description:
+      - A lot of people go through life with only the handfull of git commands they need to get by. They're perfectly happy to Google around when they get into trouble but they might miss out on all of the features that are at their disposal.
+      - For me git started as a means to an end but it quickly snowballed into a (minor) obsession. In this talk I cover some of my favourite git commands and shortcuts.
+    src: advanced-git
+    title: Advanced Git
+  - description:
+      - This should be useful for anyone frequently running into permissions issues when using OpenShift who needs a crash course in OpenShift Authorisation.
+      - Covering system and container level permissions models. Users, Roles and SecurityContextConstraints.
+    src: openshift-authz
+    title: OpenShift Authorisation
+  - description:
+      - Follow your favourite bands across the globe!
+      - Search for international events and choose based on price of hotel/flights. Turn your concert outting into a real holiday!
+      - This is a project I was working on for <a href="https://www.universe.com/events/ticketmaster-hackathon-dublin-6th-may-2017-tickets-CZ0VMT">Ticketmaster's Dublin Hackathon.</a>
+    src: groupie
+    title: Group.ie
+  - description:
+      - Open Source Software is everywhere these days. There’s more opportunities than ever to give something back. In fact I believe that there’s more reasons than ever to give something back, some personal and others professional.
+      - If you haven’t done it before, becoming a contributor to a project can seem daunting. I want to show you that there are many ways you can help an OSS community and that you can build on these contributions to become an integral part of that community.
+    src: open_source
+    title: Contributing to Open Source

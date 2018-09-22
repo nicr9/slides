@@ -27,7 +27,7 @@ generate:
 	cp -r openshift-authz public
 	cp -r advanced-git public
 	cp -r buzzwords public
-	cp index.html public
+	python3 scripts/generate-html.py slides.yml > public/index.html
 	printf '${DOMAIN}' > public/CNAME
 	rm public/.gitignore public/.travis.yml public/CONTRIBUTING.md public/README.md public/demo.html
 
